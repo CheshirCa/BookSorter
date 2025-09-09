@@ -1,0 +1,62 @@
+﻿groups:
+  - name: IT
+    groups:
+      - name: Programming
+        groups:
+          - name: Python
+            include: ["Python"]
+          - name: Rust
+            include: ["Rust"]
+          - name: Java
+            include: ["Java"]
+          - name: PHP
+            include: ["PHP*MySQL", "PHP"]
+          - name: JavaScript
+            include: ["JavaScript", "JS"]
+          - name: Go
+            include: ["GoLang", "Go"]
+          - name: C++
+            include: ["regex:C\\+\\+", "Cplusplus"]
+          - name: C
+            include: ["C programming"]
+      - name: Systems
+        groups:
+          - name: Windows
+            include: ["Windows", "WinServer", "Windows10", "Windows11"]
+            exclude: ["Office"]
+          - name: Linux
+            include: ["Linux", "Ubuntu", "Debian", "Fedora"]
+          - name: macOS
+            include: ["macOS", "OSX", "Macintosh"]
+      - name: Applications
+        groups:
+          - name: Office
+            include: ["Office", "Office365", "Microsoft Word", "Excel", "PowerPoint"]
+            exclude: ["Linux", "macOS"]
+          - name: Adobe
+            include: ["Photoshop", "Illustrator", "Acrobat"]
+          - name: IDEs
+            include: ["PyCharm", "IntelliJ", "Visual Studio", "VSCode", "Eclipse"]
+  - name: Science
+    groups:
+      - name: Physics
+        include: ["Physics", "Физика", "Quantum", "Mechanics"]
+      - name: Chemistry
+        include: ["Chemistry", "Химия", "Organic", "Lab"]
+      - name: Biology
+        include: ["Biology", "Биология"]
+        groups:
+          - name: For_Kids
+            include: ["детям", "for_kids", "kids"]
+      - name: Mathematics
+        include: ["Math", "Математика", "Statistics", "Алгебра"]
+      - name: Astronomy
+        include: ["Astronomy", "Stars", "Cosmos", "Космос"]
+      - name: General
+        include: ["Science", "Наука"]
+  - name: Kids
+    include: ["Fairy_tales", "Stories", "Истории", "детям", "Children"]
+  - name: Arts
+    include: ["Art", "Painting", "Music", "Музыка", "Живопись"]
+  - name: Literature
+    include: ["Novel", "Poetry", "Поэзия", "Роман"]
